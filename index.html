@@ -124,15 +124,14 @@ body::before {
 
 /* ===== NAVBAR ===== */
 nav {
-  position: fixed;
+  position: static;
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 18px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(5,13,31,0.85);
-  backdrop-filter: blur(20px);
+  background: rgba(5,13,31,0.95);
   border-bottom: 1px solid var(--border);
   transition: all 0.3s ease;
 }
@@ -257,7 +256,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 140px 24px 80px;
+  padding: 80px 24px 80px;
   overflow: hidden;
 }
 
@@ -1910,7 +1909,7 @@ footer {
   .nav-cta { font-size: 0.78rem; padding: 8px 14px; white-space: nowrap; }
 
   /* Hero */
-  .hero { padding: 110px 16px 56px; }
+  .hero { padding: 60px 16px 56px; }
   .hero h1 { letter-spacing: -0.02em; }
   .hero-badge { font-size: 0.72rem; padding: 6px 14px; }
   .hero-sub { font-size: 0.95rem; }
