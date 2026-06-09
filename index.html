@@ -194,7 +194,7 @@ nav {
   flex-wrap: nowrap;
   justify-content: center;
   gap: 10px;
-  margin: 20px auto;
+  margin: 24px auto 4px;
   max-width: 900px;
   width: 100%;
 }
@@ -278,9 +278,9 @@ nav {
   font-weight: 400;
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   text-align: center;
-  margin: 12px auto 36px;
-  max-width: 560px;
-  line-height: 1.6;
+  margin: 18px auto 36px;
+  max-width: 600px;
+  line-height: 1.65;
 }
 
 .hero-sub-line2 {
@@ -498,8 +498,8 @@ nav {
   font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255,255,255,0.72);
-  max-width: 580px;
-  margin: 0 auto 48px;
+  max-width: 640px;
+  margin: 0 auto 24px;
   font-weight: 400;
   line-height: 1.75;
   letter-spacing: 0.01em;
@@ -2161,7 +2161,6 @@ footer {
 
 /* ===== HERO RISK NOTE ===== */
 .hero-cta-stack { display: flex; flex-direction: column; align-items: center; gap: 12px; }
-.hero-risk-note { font-size: 0.82rem; color: rgba(255,255,255,0.55); font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif; }
 
 /* ===== RESULT BADGES ===== */
 .result-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(26,108,248,0.15); border: 1px solid rgba(45,132,255,0.3); border-radius: 100px; padding: 5px 14px; font-size: 0.75rem; font-weight: 600; color: #5ab4ff; margin-bottom: 14px; letter-spacing: 0.01em; font-family: 'DM Sans', -apple-system, sans-serif; }
@@ -2189,13 +2188,6 @@ footer {
 .pulse-btn:hover { animation: none; }
 
 /* ===== MODULE PILLS ===== */
-.module-pills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 24px;
-}
 
 .module-pill {
   display: flex;
@@ -2312,6 +2304,22 @@ footer {
 }
 
 
+/* ===== VIDEO SOCIAL PROOF ===== */
+.video-proof-section { padding: 100px 0; background: var(--navy); position: relative; z-index: 1; }
+.video-proof-header { text-align: center; margin-bottom: 48px; }
+.video-proof-wrap { max-width: 820px; margin: 0 auto; }
+.video-embed-container { position: relative; width: 100%; padding-bottom: 56.25%; border-radius: 16px; overflow: hidden; box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(45,132,255,0.25); }
+.video-embed-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+.video-thumb-link { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+.video-thumb-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease, filter 0.4s ease; filter: brightness(0.85); }
+.video-thumb-link:hover .video-thumb-img { transform: scale(1.03); filter: brightness(0.7); }
+.video-play-btn { position: relative; z-index: 2; filter: drop-shadow(0 4px 20px rgba(0,0,0,0.5)); transition: transform 0.25s ease; }
+.video-thumb-link:hover .video-play-btn { transform: scale(1.12); }
+.video-watch-label { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2; background: rgba(0,0,0,0.65); color: white; font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 600; padding: 6px 16px; border-radius: 100px; white-space: nowrap; letter-spacing: 0.02em; backdrop-filter: blur(6px); }
+.video-proof-caption { display: flex; justify-content: center; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.video-proof-badge { font-family: 'DM Sans', sans-serif; font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.6); background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12); border-radius: 100px; padding: 6px 14px; }
+@media (max-width: 600px) { .video-proof-section { padding: 72px 0; } .video-embed-container { border-radius: 12px; } }
+
 .who-section { padding: 100px 0; background: var(--navy2); position: relative; z-index: 1; }
 .who-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
 .who-right { display: flex; flex-direction: column; gap: 14px; }
@@ -2322,8 +2330,7 @@ footer {
 @media (max-width: 900px) { .who-inner { grid-template-columns: 1fr; gap: 36px; } }
 @media (max-width: 600px) {
   .who-section { padding: 72px 0; }
-  .hero-risk-note { font-size: 0.75rem; text-align: center; flex-wrap: wrap; justify-content: center; }
-  .guarantee-row { padding: 14px 16px; }
+    .guarantee-row { padding: 14px 16px; }
 }
 
 /* ===== MID-PAGE CTA BAR ===== */
@@ -2764,7 +2771,7 @@ footer {
 <section class="benefits-section">
   <div class="container">
     <div class="section-label reveal">Why Students Love This Course</div>
-    <h2 class="section-title reveal">Built for <span class="accent">Real Results</span></h2>
+    <h2 class="section-title reveal">Built to Get You <span class="accent">Real Results</span></h2>
     <p class="section-desc reveal" style="max-width: 640px;">No fluff, no theory. Every lesson creates immediate, measurable impact on your business growth.</p>
 
     <div class="benefits-layout">
@@ -2979,12 +2986,46 @@ footer {
 
   </div>
 </section>
+<!-- VIDEO SOCIAL PROOF -->
+<section class="video-proof-section">
+  <div class="container">
+    <div class="video-proof-header reveal">
+      <div class="section-label">Student Story</div>
+      <h2 class="section-title">Don't Just Take <span class="accent">Our Word For It</span></h2>
+      <p class="section-desc">Hear what one entrepreneur had to say, on a recent podcast.</p>
+    </div>
+    <div class="video-proof-wrap reveal">
+      <div class="video-embed-container" id="videoContainer">
+        <a href="https://youtu.be/ZcCwvE3PQVA" target="_blank" rel="noopener" class="video-thumb-link" id="videoThumb">
+          <img
+            src="https://img.youtube.com/vi/ZcCwvE3PQVA/maxresdefault.jpg"
+            alt="AI for Entrepreneurs — Student Podcast Interview"
+            class="video-thumb-img"
+            onerror="this.src='https://img.youtube.com/vi/ZcCwvE3PQVA/hqdefault.jpg'"
+          >
+          <div class="video-play-btn">
+            <svg viewBox="0 0 68 48" width="68" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="68" height="48" rx="12" fill="#FF0000"/>
+              <path d="M45 24L28 33.5V14.5L45 24Z" fill="white"/>
+            </svg>
+          </div>
+          <div class="video-watch-label">▶ Watch on YouTube</div>
+        </a>
+      </div>
+      <div class="video-proof-caption">
+        <span class="video-proof-badge">🎙️ Podcast Interview</span>
+        <span class="video-proof-badge">✓ Verified Student</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="pricing-section" id="pricing">
   <div class="container">
     <div class="pricing-header">
       <div class="section-label reveal">Course Investment</div>
       <h2 class="section-title reveal">One Price. <span class="accent">Lifetime Value.</span></h2>
-      <p class="section-desc reveal" style="margin: 0 auto; text-align: center;">One investment. Lifetime access. Start seeing results within weeks.</p>
+      <p class="section-desc reveal" style="margin: 0 auto; text-align: center;">One investment. Lifetime access. Real results within weeks.</p>
     </div>
     <div class="pricing-card reveal">
       <div class="pricing-course-title">AI for <span>Entrepreneurs</span></div>
@@ -3011,7 +3052,7 @@ footer {
         <li class="pricing-feature"><span class="feat-check">✓</span>Lifetime access + all future updates</li>
         <li class="pricing-feature"><span class="feat-check">✓</span>No coding or technical skills required</li>
       </ul>
-      <a href="https://www.paypal.com/ncp/payment/NBSXSE6W44FSS" target="_blank" rel="noopener" class="enroll-btn pulse-btn">Start Learning Today →</a>
+      <a href="https://www.paypal.com/ncp/payment/NBSXSE6W44FSS" target="_blank" rel="noopener" class="enroll-btn pulse-btn">Enroll Now — Start Learning →</a>
       <div class="enroll-social-proof">🔥 <strong>3,000+ entrepreneurs</strong> have already enrolled</div>
       <div class="guarantee-row">
         <span class="guarantee-icon">🛡️</span>
@@ -3102,7 +3143,7 @@ footer {
     <h2 class="reveal">Your Business Deserves to <br><span class="accent">Grow Faster</span></h2>
     <p class="reveal">Your competitors are starting to use AI tools, when will you? Join 3,000+ entrepreneurs already using AI to grow faster, work smarter, and win more customers.</p>
     <a href="https://www.paypal.com/ncp/payment/NBSXSE6W44FSS" target="_blank" rel="noopener" class="final-cta-btn reveal">
-      Get Instant Access — <span id="price-final-cta">₹8,500</span>
+      Enroll Now — <span id="price-final-cta">₹8,500</span>
       <span class="cta-arrow">→</span>
     </a>
   </div>
@@ -3287,6 +3328,23 @@ window.addEventListener('scroll', function() {
     frag.appendChild(p);
   }
   document.body.appendChild(frag);
+})();
+
+// Video autoplay on scroll
+(function() {
+  var container = document.getElementById('videoContainer');
+  if (!container) return;
+  var triggered = false;
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !triggered) {
+        triggered = true;
+        observer.disconnect();
+        container.innerHTML = '<iframe src="https://www.youtube.com/embed/ZcCwvE3PQVA?autoplay=1&mute=1&rel=0&modestbranding=1" title="AI for Entrepreneurs — Student Podcast Interview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;"></iframe>';
+      }
+    });
+  }, { threshold: 0.5 });
+  observer.observe(container);
 })();
 
 // Testimonial carousel (mobile)
